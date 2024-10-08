@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Life Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kevin's Life Tracker</h1>
+    <section id="handball">
+        <h2>Handball Matches</h2>
+        <form id="handball-form">
+            <input type="number" id="wins" placeholder="Number of Wins" required min="0">
+            <input type="number" id="losses" placeholder="Number of Losses" required min="0">
+            <button type="submit">Log Match</button>
+        </form>
+        <div id="handball-stats"></div>
+    </section>
+
+    <section id="piano">
+        <h2>Piano Practice</h2>
+        <form id="piano-form">
+            <input type="number" id="practice-time" placeholder="Practice Time (minutes)" required min="1">
+            <input type="text" id="piece" placeholder="Piece Practiced" required>
+            <button type="submit">Log Practice</button>
+        </form>
+        <div id="piano-stats"></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
